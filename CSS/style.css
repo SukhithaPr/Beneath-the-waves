@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  padding-top: 60px;
+  background-color: #4691bd;
+  color: #fff;
+}
+
+header {
+  position: relative;
+  padding: 0 2rem;
+}
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  margin: 0 auto;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: url(../Images/navbar-bg.jpg);
+  background-size: cover;
+  color: white;
+  padding: 10px 25px 10px 0;
+  top: 0;
+  left: 0;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  transition: padding 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar .logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+  top: 12px;
+  left: 12px;
+  z-index: 2;
+  transition: height 0.3s ease, width 0.3s ease;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.logo-title {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 5px;
+  font-size: 20px;
+}
+
+.navbar li {
+  list-style: none;
+  font-family: 'poppins', Helvetica, sans-serif;
+}
+
+.line {
+  height: 1px;
+  width: 5px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.toggle {
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding-right: 10px;
+  display: none;
+}
+
+.navbar a {
+  display: flex;
+  padding: 10px 5px 10px 5px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom-color 0.3s, background-color 0.3s;
+}
+
+.navbar a:hover {
+  border-bottom-color: #fff;
+  transition: all 0.3s linear;
+}
+
+.navbar a:active {
+  border-bottom: black;
+  border-bottom-color: #333;
+}
+
+.navbar.shrink {
+  height: 40px;
+  transition: height 0.3s ease-in-out;
+}
+
+.navbar.shrink .logo {
+  border-radius: 40px;
+  height: 40px;
+  width: 40px;
+}
+
+.dropdown {
+  display: none;
+}
+
+.dropdown.open {
+  height: max-content;
+}
+
+.dropdown li {
+  padding: 1vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.dropdown a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.dropdown li:hover {
+  font-size: 1.5rem;
+  border: lightblue solid 0.2px;
+}
+
+.footer {
+  position: static;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  padding: 20px 0; /* Adjust padding to eliminate bottom gap */
+}
+
+.footer-container {
+  margin: auto;
+  width: 100%;
+  z-index: 100;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-logo,
+.footer-links {
+  padding: 10px 0;
+  width: 25%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .logo {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  left: 10px;
+  margin: 20px;
+}
+
+.footer-links ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-links a {
+  padding: 5px 0;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-links a:hover {
+  background-size: 200%;
+  border: 1px solid whitesmoke;
+  /* transition: 0.5s; */
+  transition: border 0.5s;
+}
+
+#vertical-line {
+  position: relative;
+  margin-top: 5px;
+  margin-left: 75px;
+  height: 190px;
+  width: 2px;
+  background-color: #fff;
+  border-radius: 5px;
+  right: 50px;
+  top: 15px;
+}
+
+#horizontal-line {
+  display: none;
+}
+
+.team-info {
+  right: 0;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-info p {
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 18px;
+  text-transform: capitalize;
+  margin: 10px auto;
+  font-weight: 500;
+}
+
+.std-info p {
+  text-align: center;
+  max-width: 100px;
+}
+.std-info a:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.students {
+  display: flex;
+  flex-direction: row;
+}
+
+.std-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  padding: 0 25px;
+}
+
+.std-info img {
+  border-radius: 100px;
+  height: 100px;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+.std-info {
+  width: max-content;
+  justify-content: center;
+}
+
+.page-end {
+  width: 100%;
+  margin-bottom: 0;
+  background: #fff;
+  color: #000;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .toggle {
+    display: block;
+  }
+
+  .navbar .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .dropdown {
+    display: block;
+    transition: height 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    position: fixed;
+    top: 60px;
+    right: 2rem;
+    height: 0;
+    width: 250px;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 101;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-logo,
+  .footer-links,
+  .team-info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-links ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footer-links ul li {
+    padding: 0 10px;
+  }
+
+  /* .team-info p {
+    margin-bottom: 15px;
+  } */
+
+  #vertical-line {
+    display: none;
+  }
+
+  #horizontal-line {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 2px;
+    width: 95%;
+    background-color: #fff;
+    z-index: 100;
+    position: relative;
+    margin: 5px auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .dropdown {
+    justify-content: center;
+    width: 90%;
+  }
+  .std-info p {
+    max-width: 100px;
+  }
+}

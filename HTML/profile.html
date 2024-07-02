@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../Images/logo.png" type="image/png">
+    <title>Profile | Beneath The Waves</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/userprofile.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+    <header>
+        <!--Navigation Bar-->
+        <nav class="navbar">
+            <a href="home.html" class="logo-link">
+                <div class="logo-container">
+                    <img class="logo" src="../Images/logo.png" alt="Website logo" />
+                    <p class="logo-title">Beneath The Waves</p>
+                </div>
+            </a>
+            <div class="toggle">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="home.html" class="nav-link"> Home </a>
+                </li>
+                <li>
+                    <a href="../HTML/UserProfile.html" class="nav-link"> Register </a>
+                </li>
+                <li>
+                    <a href="home.html#articles-heading" class="nav-link"> Articles </a>
+                </li>
+                <li>
+                    <a href="feedback.html" class="nav-link">Feedback </a>
+                </li>
+                <li>
+                    <a href="shop.html" class="nav-link">Shop </a>
+                </li>
+                <li>
+                    <a href="../HTML/Team.html" class="nav-link">Team </a>
+                </li>
+            </ul>
+        </nav>
+        <!--Dropdown Navigation for smaller screens-->
+        <div class="dropdown">
+            <ul class="dropdown-links">
+                <li>
+                    <a href="home.html" class="nav-link"> Home </a>
+                </li>
+                <li>
+                    <a href="../HTML/UserProfile.html" class="nav-link"> Register </a>
+                </li>
+                <li>
+                    <a href="home.html#articles-heading" class="nav-link"> Articles </a>
+                </li>
+
+                <li>
+                    <a href="feedback.html" class="nav-link"> Feedback </a>
+                </li>
+                <li>
+                    <a href="shop.html" class="nav-link"> Shop </a>
+                </li>
+                <li>
+                    <a href="../HTML/Team.html" class="nav-link"> Team </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div id="glassbox">
+        <div class="cover">
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <p id="questionText">
+                    <div class="modal-input">
+                        <input type="text" id="inputField">
+                        <button onclick="handleResponse('Next')" class="next">Next</button>
+                        <button onclick="handleResponse('Skip')" class="skip">Skip</button>
+                        <button onclick="handleResponse('Back')" class="back">Back</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <br>
+    <div id="progressContainer">
+        <!-- <p>Profile Completed: <span id="profileCompletion"></span>%</p> -->
+        <progress id="progressBar" max="100" value="0"></progress>
+    </div>
+    <br>
+
+    <div class="output-box" style="display: none;">
+        <div class="output-text">
+
+            <p class="step"><strong><i>STEP 1</i></strong></p>
+
+            <p>1. Your name :
+                <span id="answer1"></span>
+            </p>
+
+            <p>2. Your age :
+                <span id="answer2"></span>
+            </p>
+
+            <p>3. Your location :
+                <span id="answer3"></span>
+            </p>
+
+            <p>4. How did you become interested in life below water :
+                <span id="answer4"></span>
+            </p>
+            <hr>
+            <p class="step"><strong><i>STEP 2</i></strong></p>
+
+            <p>1. Have you participated in any beach clean-up events or marine life rescue
+                operations :
+                <span id="answer5"></span>
+            </p>
+
+            <p>2. Do you follow any sustainable practices in your daily routine to reduce your
+                impact on marine environments :
+                <span id="answer6"></span>
+            </p>
+
+            <p>3. Have you engaged in any conservation efforts related to marine life :
+                <span id="answer7"></span>
+            </p>
+
+            <p>4. How do you contribute to raising awareness about the importance of preserving
+                ocean ecosystems :
+                <span id="answer8"></span>
+            </p>
+
+            <hr>
+            <p class="step"><strong><i>STEP 3</i></strong></p>
+
+            <p>1. Have you published any research papers or articles related to marine
+                conservation :
+                <span id="answer9"></span>
+            </p>
+
+            <p>2. Are you affiliated with any organizations or institutions that focus on marine
+                life preservation :
+                <span id="answer10"></span>
+            </p>
+
+            <p>3. What formal education or training do you have in marine biology, oceanography,
+                or related fields :
+                <span id="answer11"></span>
+            </p>
+
+            <p>4. Have you received any awards or recognitions for your contributions to
+                protecting life below water :
+                <span id="answer12"></span>
+            </p>
+
+        </div>
+    </div>
+
+    <div id="feedback-section" style="display: none;">
+        <p id="feedback-message">Profile Completed Successfully, Thank You!
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="row">
+                <div class="footer-logo">
+                    <img src="../Images/logo.png" alt="Website logo" class="logo" />
+                    <p class="logo-title">Beneath The Waves</p>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="../HTML/UserProfile.html">Register</a></li>
+                        <li><a href="home.html#articles-heading"> Articles </a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="../HTML/Team.html">Team</a></li>
+                    </ul>
+                </div>
+                <div id="horizontal-line"></div>
+                <div id="vertical-line"></div>
+                <div class="team-info">
+                    <p>Our Team</p>
+                    <div class="students">
+                        <div class="std-info">
+                            <a href="PageEditorStudent1.html"><img src="../Images/std1.jpg" alt="Student 1" />
+                                <p>Ransika Ranaweera</p>
+                            </a>
+                        </div>
+                        <div class="std-info">
+                            <a href="PageEditorStudent2.html"><img src="../Images/std2.jpg" alt="Student 2" />
+                                <p>Chamath Matharage</p>
+                            </a>
+                        </div>
+                        <div class="std-info">
+                            <a href="../HTML/PageEditorStudent3.html"><img src="../Images/std3.jpg" alt="Student 3" />
+                                <p>Sukhitha Saparamadu</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="page-end">
+            <p>© All Rights Reserved - Beneath The Waves | Sri Lanka</p>
+        </div>
+    </footer>
+
+    <script src="../JavaScript/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="../JavaScript/userprofile.js"></script>
+    <script>
+        startPrompt();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../Images/logo.png" type="image/png">
+    <title>Shop | Beneath The Waves</title>
+    <link rel="stylesheet" href="../CSS/shop.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <!-- Box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="overlay"></div>
+
+    <!-- Header -->
+
+    <header>
+        <!--Navigation Bar-->
+        <nav class="navbar">
+            <a href="home.html" class="logo-link">
+            <div class="logo-container">
+                <img class="logo" src="../Images/logo.png" alt="Website logo" />
+                <p class="logo-title">Beneath The Waves</p>
+            </div>
+            </a>
+            <div class="toggle">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="home.html" class="nav-link"> Home </a>
+                </li>
+                <li>
+                    <a href="profile.html" class="nav-link"> Register </a>
+                </li>
+                <li>
+                    <a href="home.html#articles-heading" class="nav-link"> Articles </a>
+                </li>
+                <li>
+                    <a href="feedback.html" class="nav-link">Feedback </a>
+                </li>
+                <li>
+                    <a href="shop.html" class="nav-link">Shop </a>
+                </li>
+                <li>
+                    <a href="team.html" class="nav-link">Team </a>
+                </li>
+            </ul>
+        </nav>
+        <!--Dropdown Navigation for smaller screens-->
+        <div class="dropdown">
+            <ul class="dropdown-links">
+                <li>
+                    <a href="home.html" class="nav-link"> Home </a>
+                </li>
+                <li>
+                    <a href="profile.html" class="nav-link"> Register </a>
+                </li>
+                <li>
+                    <a href="home.html#articles-heading" class="nav-link"> Articles </a>
+                </li>
+                <li>
+                    <a href="feedback.html" class="nav-link"> Feedback </a>
+                </li>
+                <li>
+                    <a href="shop.html" class="nav-link"> Shop </a>
+                </li>
+                <li>
+                    <a href="team.html" class="nav-link"> Team </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    
+    <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+        <!-- Content -->
+        <div class="cart-content">
+            
+        </div>
+        <!-- Total -->
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">$0</div>
+        </div>
+        <!-- Buy Button -->
+        <button type="button" class="buy-now">Buy Now</button>
+        <!-- Cart Close -->
+        <i class='bx bx-x' id="close-cart"></i>
+    </div>
+    <!--</div>-->
+    
+    <div class="cart-circle" id="cart-circle">
+        <i class='bx bx-cart' id="cart-icon"></i>
+    </div>
+    
+    <!-- shop -->
+    <section class="shop container">
+        <h2 class="section-title">Shop Products</h2>
+        <!-- Content -->
+        <div class="shop-content">
+            <!-- Box 1 -->
+            <div class="product-box">
+                <img src="../Product-images/save-our-oceans-tshirt.png" alt="Save our oceans t shirt" class="product-img">
+                <h2 class="product-title">Save our oceans T-shirt</h2>
+                <select class="options">
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>Large</option>
+                </select>
+                <br>
+                <span class="price">$20</span>
+                <i class='bx bx-cart-add add-cart' ></i>
+            </div>
+            <!-- Box 2 -->
+            <div class="product-box">
+                <img src="../Product-images/more-ocean-less-plastic-t.jpeg" alt="more ocean less plastic t shirt" class="product-img">
+                <h2 class="product-title">more ocean less plastic T-shirt</h2>
+                <select class="options">
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>Large</option>
+                </select>
+                <br>
+                <span class="price">$18</span>
+                <i class='bx bx-cart-add add-cart' ></i>
+            </div>
+            <!-- Box 3 -->
+            <div class="product-box">
+                <img src="../Product-images/whale-stuffed-toy.jpeg" alt="stuffed whale toy" class="product-img">
+                <h2 class="product-title">stuffed whale toy</h2>
+                <select class="options">
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>Large</option>
+                </select>
+                <br>
+                <span class="price">$12</span>
+                <i class='bx bx-cart-add add-cart' ></i>
+            </div>
+            <!-- Box 4 -->
+            <div class="product-box">
+                <img src="../Product-images/TurtleRecycledToy.png" alt="stuffed turtle Toy" class="product-img">
+                <h2 class="product-title">stuffed turtle toy</h2>
+                <select class="options">
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>Large</option>
+                </select>
+                <br>
+                <span class="price">$10</span>
+                <i class='bx bx-cart-add add-cart' ></i>
+            </div>
+            <!-- Box 5 -->
+            <div class="product-box">
+                <img src="../Product-images/out-of-the-ocean-bag.png" alt="out of the ocean bag" class="product-img">
+                <h2 class="product-title">out of the ocean bag</h2>
+                <select class="options">
+                    <option>White</option>
+                    <option>Black</option>
+                </select>
+                <br>
+                <span class="price">$15</span>
+                <i class='bx bx-cart-add add-cart' ></i>
+            </div>
+            <!-- Box 6 -->
+            <div class="product-box">
+                <img src="../Product-images/ocean-plastics-water-bottle.png" alt="ocean plastics water bottle" class="product-img">
+                <h2 class="product-title">ocean plastics water bottle</h2>
+                <select class="options">
+                    <option>White</option>
+                    <option>Black</option>
+                    <option>Blue</option>
+                </select>
+                <br>
+                <span class="price">$22</span>
+                <i class='bx bx-cart-add add-cart' ></i>
+            </div>
+            <!-- Box 7 -->
+            <div class="product-box">
+                <img src="../Product-images/ocean-plastic-pendant-necklace.jpg" alt="ocean plastic pendant necklace" class="product-img">
+                <h2 class="product-title">ocean plastic pendant necklace</h2>
+                <select class="options">
+                    <option>Green</option>
+                    <option>Blue</option>
+                    <option>Purple</option>
+                </select>
+                <br>
+                <span class="price">$25</span>
+                <i class='bx bx-cart-add add-cart' ></i>
+            </div>
+            <!-- Box 8 -->
+            <div class="product-box">
+                <img src="../Product-images/recycled-ocean-waste-shoes.png" alt="ocean waste shoes" class="product-img">
+                <h2 class="product-title">recycled ocean waste shoes</h2>
+                <select class="options">
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>Large</option>
+                </select>
+                <br>
+                <span class="price">$30</span>
+                <i class='bx bx-cart-add add-cart' ></i>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="form-screen">
+    <div class="form-container">
+        <h3 class="form-title">Almost there...</h3>
+        <h1 class="form-title">Enter Your Details</h1>
+        <form id="customer-form">
+            <!-- Contact Details -->
+            <fieldset>
+                <legend>Contact Details</legend>
+                <div class="form-group">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="surname">Surname:</label>
+                    <input type="text" id="surname" name="surname" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </fieldset>
+            <br>
+            <!-- Billing Address -->
+            <fieldset>
+                <legend>Billing Address</legend>
+                <div class="form-group">
+                    <label for="address-line1">Address Line 1:</label>
+                    <input type="text" id="address-line1" name="address-line1" required>
+                </div>
+                <div class="form-group">
+                    <label for="address-line2">Address Line 2:</label>
+                    <input type="text" id="address-line2" name="address-line2">
+                </div>
+                <div class="form-group">
+                    <label for="street">Street:</label>
+                    <input type="text" id="street" name="street" required>
+                </div>
+                <div class="form-group">
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+                <div class="form-group">
+                    <label for="postal-code">Postal Code:</label>
+                    <input type="text" id="postal-code" name="postal-code" required>
+                </div>
+                <div class="form-group">
+                    <label for="country">Country:</label>
+                    <input type="text" id="country" name="country" required>
+                </div>
+            </fieldset>
+            <br>
+            <!-- Payment Details -->
+            <fieldset>
+                <legend>Payment Details</legend>
+                <div class="form-group">
+                    <label for="card-number">Card Number:</label>
+                    <input type="text" id="card-number" name="card-number" required>
+                </div>
+                <div class="form-group">
+                    <label for="cardholder-name">Cardholder Name:</label>
+                    <input type="text" id="cardholder-name" name="cardholder-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="expiry-date">Expiry Date:</label>
+                    <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YYYY" required>
+                </div>
+                <div class="form-group">
+                    <label for="ccv">CCV:</label>
+                    <input type="text" id="ccv" name="ccv" required>
+                </div>
+            </fieldset>
+            <br>
+            <button type="submit" id="submit-form">Submit</button>
+            <br>
+            <button type="reset">Clear all</button>
+        </form>
+    </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="row">
+                <div class="footer-logo">
+                    <img src="../Images/logo.png" alt="Website logo" class="logo">
+                    <p class="logo-title">Beneath The Waves</p>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="profile.html">Register</a></li>
+                        <li><a href="home.html#articles-heading"> Articles </a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="team.html">Team</a></li>
+                    </ul>
+                </div>
+                <div id="horizontal-line"></div>
+                <div id="vertical-line"></div>
+            <div class="team-info">
+                <p>Our Team</p>
+                <div class="students">
+                    <div class="std-info">
+                        <a href="PageEditorStudent1.html">
+                            <img src="../Images/team/std1.jpg" alt="Student 1">
+                    <p>Ransika Ranaweera</p></a>
+                </div>
+                <div class="std-info">
+                    <a href="PageEditorStudent2.html">
+                    <img src="../Images/team/std2.jpg" alt="Student 2" />
+                    <p>Chamath Matharage</p></a>
+                </div>
+                <div class="std-info">
+                    <a href="PageEditorStudent3.html">
+                    <img src="../Images/team/std3.jpg" alt="Student 3" />
+                    <p>Sukhitha Saparamadu</p></a>
+                </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <hr />
+        <div class="page-end">
+            <p>© All Rights Reserved - Beneath The Waves | Sri Lanka</p>
+        </div>
+    </footer>
+
+    <!-- Link to js -->
+    <script src="../JavaScript/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="../JavaScript/shop.js"></script>
+    
+</body>
+</html>
+
+
+

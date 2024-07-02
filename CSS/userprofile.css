@@ -1,0 +1,170 @@
+body {
+    font-family: 'poppins', sans-serif;
+    background-image: url("../Images/userprofilebg.jpg");
+}
+
+/* Style for the glass box container */
+.glassbox {
+    position: absolute;
+    margin-left: auto;
+    margin-right: 50%;
+    /* top: 0; */
+    /* left: 0; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: rgba(0, 0, 0, 0.5); */
+    /* z-index: 999; */
+}
+
+/* Style for the cover inside the glass box */
+.cover {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7%;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Style for the prompt text */
+#questionText {
+    color: #fff;
+    font-family: 'poppins', sans-serif;
+    /* font-weight: bold; */
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Style for the text input */
+input[type="text"] {
+    font-size: 15px;
+    padding: 10px;
+    width: 92.6%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Style for the modal input buttons */
+.modal-input button {
+    font-family: 'poppins', sans-serif;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+
+}
+
+/* Style for the next button */
+.next {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Style for the skip button */
+.skip {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Style for the back button */
+.back {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Hover effect for buttons */
+.next:hover,
+.skip:hover,
+.back:hover {
+    opacity: 0.8;
+}
+
+.output-box {
+    background-color: #eaf5ff;
+    opacity: 0.9;
+    /* Light blue background */
+    /* border: 2px solid #0077cc; */
+    /* Dark blue border */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0px auto 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+}
+
+.output-text p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333333;
+}
+
+.output-text strong {
+    font-weight: bold;
+    color: #000000;
+    /* Dark blue for strong elements */
+}
+
+.output-text span {
+    color: #666666;
+}
+
+#progressBar {
+    margin-left: 12.6%;
+    margin-right: 0%;
+    width: 75%;
+    height: 25px;
+}
+
+#progressContainer {
+    margin-left:  auto;
+    margin-right: auto;
+
+}
+
+#feedback-section {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10px;
+    text-align: center;
+}
+
+#feedback-message {
+    background-color: #ffc107;
+    opacity: 0.85;
+    color: #000; 
+    font-size: larger; 
+    font-style: oblique; 
+    font-weight: bolder;
+    padding: 10px; 
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#feedback-button {
+    background-color: #ffc107;
+    color: #000; 
+    font-size: large;
+    font-style: oblique; 
+    font-weight: bolder; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+}
+
+#feedback-button:hover {
+    opacity: 0.8; 
+}
+
+
+

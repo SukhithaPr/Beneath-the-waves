@@ -1,0 +1,215 @@
+body {
+  height: 100vh;
+  background-color: rgb(131, 131, 255);
+  background: fixed;
+  color: white;
+}
+
+#myVideo {
+  position: fixed;
+  filter: brightness(70%);
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  padding-top: 65px;
+  padding-left: 5px;
+}
+
+.heading {
+  text-align: center;
+  width: 60vw;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 100px;
+}
+
+#feedback-form {
+  width: 85vw;
+  height: max-content;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 25px;
+  backdrop-filter: blur(15px);
+  padding: 10px;
+}
+
+#feedback-form p {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: red;
+  font-weight: bold;
+}
+
+#feedback-form label {
+  text-align: left;
+  width: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#feedback-form #rating-label {
+  width: 100%;
+  margin: 5px;
+  left: 0;
+}
+
+#feedback-form .radio-label {
+  display: flex;
+  width: 15px;
+  /* margin: 2px 0; */
+  /* padding: 5px 0; */
+}
+
+.rating {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: row;
+  margin: 15px auto 20px auto;
+}
+
+.main input[type="radio"] {
+  display: none;
+}
+
+.main .radio-label {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 5px 20px;
+  background-color: #000;
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s;
+}
+
+.main .radio-label:hover {
+  background: #00f6;
+  transition: 0.5s;
+  background-size: 200% auto;
+  border: 1px solid transparent;
+}
+
+.main input[type="radio"]:checked + .radio-label {
+  background-color: #4cafff;
+  transition: 0.5s;
+  background-size: 150% auto;
+  color: #fff;
+}
+
+#feedback-form .comment-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5px auto;
+  width: 65%;
+}
+
+#preview {
+  display: none;
+}
+
+#feedback-form input[type="text"],
+#feedback-form input[type="email"],
+#feedback-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.fname-container,
+.lname-container,
+.email-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.comment-container textarea {
+  width: 100%;
+  padding: 8px;
+}
+
+.buttons{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+input[type="submit"] {
+  background-color: #4cafff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s; /* Transition effect */
+  margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+  background-color: darkblue;
+}
+
+#preview-btn {
+  background-color: #4cafff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s; /* Transition effect */
+  margin-top: 10px; /* Add margin for spacing */
+}
+
+#preview-btn:hover {
+  background-color: darkblue;
+}
+
+button[type="reset"] {
+  background-color: #ff6666; /* Red background color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s; /* Transition effect */
+  margin-top: 10px; /* Add margin for spacing */
+}
+
+button[type="reset"]:hover {
+  background-color: #cc0000; /* Darker red color on hover */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  #feedback-form label {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  #feedback-form input[type="text"],
+  #feedback-form input[type="email"],
+  #feedback-form textarea {
+    width: 100%;
+  }
+}

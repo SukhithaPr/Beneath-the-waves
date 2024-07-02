@@ -1,0 +1,124 @@
+body {
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.contentPage {
+    background-image: url("../Images/pic14.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 320px 0;
+    text-align: center;
+    position: relative;
+    font-size: small;
+
+
+}
+
+header h1 {
+    position: absolute;
+    bottom: 20px;
+    /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    font-size: 3em;
+    /* Increased font size */
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    /* Example font family */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Example text shadow */
+}
+
+ol {
+    margin-left: 40px;
+}
+
+p {
+    margin-left: 30px;
+}
+
+.content_nav {
+    background-color: #abbfd3;
+    padding: 20px;
+    text-align: center;
+    font-size: x-large;
+    background-image: linear-gradient(to right, #c5e4e4, #9dc4c6, #c5e4e4);
+}
+
+.text1,
+.text2,
+.text3,
+.text4 {
+    color: #13465f;
+    text-decoration: none;
+    margin: 0 30px;
+
+}
+
+nav .text1:hover,
+.text2:hover,
+.text3:hover,
+.text4:hover {
+    color: #ffffff;
+    /* Change color on hover */
+    background-color: #103547;
+    /* Add background color on hover */
+    border-radius: 1px;
+    /* Optional: Add rounded corners */
+    padding: 5px 10px;
+}
+
+
+section {
+    padding: 20px;
+}
+
+#image-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image1,
+.image2,
+.image3 {
+    margin: 5px;
+    border-radius: 30px;
+    overflow: hidden;
+    display: inline-block;
+    /* Display images inline */
+    margin-right: 10px;
+    /* Adjust as needed */
+    vertical-align: top;
+    /* Align images to the top */
+
+
+}
+
+.image4,
+.image5,
+.image6,
+.image7,
+.image8 {
+    border-radius: 30px;
+    display: inline-block;
+    /* Display images inline */
+    margin-right: 10px;
+    /* Adjust as needed */
+    vertical-align: top;
+    /* Align images to the top */
+}
+
+
+
+footer {
+    background-color: #34495e;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

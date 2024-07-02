@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../css/feedback.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css" />
+    <link class="titlepic" rel="icon" href="../Images/logo.png" type="images" />
+    <title>Feedback | Beneath The Waves</title>
+  </head>
+  <body>
+    <header>
+      <!--Navigation Bar-->
+      <nav class="navbar">
+        <a href="home.html" class="logo-link">
+          <div class="logo-container">
+            <img class="logo" src="../Images/logo.png" alt="Website logo" />
+            <p class="logo-title">Beneath The Waves</p>
+          </div>
+        </a>
+        <div class="toggle">
+          <ion-icon name="menu-outline"></ion-icon>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="home.html" class="nav-link"> Home </a>
+          </li>
+          <li>
+            <a href="profile.html" class="nav-link"> Register </a>
+          </li>
+          <li>
+            <a href="home.html#articles-heading" class="nav-link"> Articles </a>
+          </li>
+          <li>
+            <a href="feedback.html" class="nav-link">Feedback </a>
+          </li>
+          <li>
+            <a href="shop.html" class="nav-link">Shop </a>
+          </li>
+          <li>
+            <a href="team.html" class="nav-link">Team </a>
+          </li>
+        </ul>
+      </nav>
+      <!--Dropdown Navigation for smaller screens-->
+      <div class="dropdown">
+        <ul class="dropdown-links">
+          <li>
+            <a href="home.html" class="nav-link"> Home </a>
+          </li>
+          <li>
+            <a href="profile.html" class="nav-link"> Register </a>
+          </li>
+          <li>
+            <a href="home.html#articles-heading" class="nav-link"> Articles </a>
+          </li>
+
+          <li>
+            <a href="feedback.html" class="nav-link"> Feedback </a>
+          </li>
+          <li>
+            <a href="shop.html" class="nav-link"> Shop </a>
+          </li>
+          <li>
+            <a href="team.html" class="nav-link"> Team </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <video autoplay muted loop id="myVideo">
+      <source src="../Images/bg/bg-jellyfish.mp4" type="video/mp4" />
+    </video>
+
+    <div class="main">
+      <h1 class="heading">How Did We Do?</h1>
+      <form id="feedback-form">
+        <p>Required fields *</p>
+        <br />
+
+        <div class="fname-container">
+          <label for="fname" class="question">First Name: *</label>
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="Enter your first name"
+          />
+        </div>
+        <div class="lname-container">
+          <label for="lname" class="question">Last Name: *</label>
+          <input
+            type="text"
+            id="lname"
+            name="lname"
+            placeholder="Enter your last name"
+          />
+        </div>
+        <div class="email-container">
+          <label for="email" class="question">Email (Optional) :</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email address"
+          />
+        </div>
+        <div class="rating">
+          <label id="rating-label">
+            How satisfied are you with our website? Choose from 0 (Extremely
+            Dissatisfied) to 10 (Extremely satisfied). *
+          </label>
+          <div class="radio-group">
+            <input type="radio" id="rating-0" name="rating" value="0" />
+            <label class="radio-label" for="rating-0">0</label>
+            <input type="radio" id="rating-1" name="rating" value="1" />
+            <label class="radio-label" for="rating-1">1</label>
+            <input type="radio" id="rating-2" name="rating" value="2" />
+            <label class="radio-label" for="rating-2">2</label>
+            <input type="radio" id="rating-3" name="rating" value="3" />
+            <label class="radio-label" for="rating-3">3</label>
+            <input type="radio" id="rating-4" name="rating" value="4" />
+            <label class="radio-label" for="rating-4">4</label>
+            <input type="radio" id="rating-5" name="rating" value="5" />
+            <label class="radio-label" for="rating-5">5</label>
+            <input type="radio" id="rating-6" name="rating" value="6" />
+            <label class="radio-label" for="rating-6">6</label>
+            <input type="radio" id="rating-7" name="rating" value="7" />
+            <label class="radio-label" for="rating-7">7</label>
+            <input type="radio" id="rating-8" name="rating" value="8" />
+            <label class="radio-label" for="rating-8">8</label>
+            <input type="radio" id="rating-9" name="rating" value="9" />
+            <label class="radio-label" for="rating-9">9</label>
+            <input type="radio" id="rating-10" name="rating" value="10" />
+            <label class="radio-label" for="rating-10">10</label>
+          </div>
+        </div>
+
+        <label for="subject">Subject (Optional) :</label>
+        <input
+          type="text"
+          id="subject"
+          name="subject"
+          placeholder="Feedback Subject"
+        /><br />
+
+        <label for="category">Category:</label>
+        <input
+          type="text"
+          id="category"
+          name="category"
+          placeholder="Feedback Category"
+        /><br />
+
+        <div class="comment-container">
+          <label for="comment"
+            >Please Give a brief reason for giving this rating: *</label
+          >
+          <textarea
+            id="comment"
+            name="comment"
+            rows="4"
+            cols="50"
+            required
+          ></textarea>
+        </div>
+        <div class="buttons">
+          <input type="submit" value="Submit" />
+          <button type="button" id="preview-btn">Preview</button>
+          <button type="reset" value="Reset">Reset</button>
+        </div>
+      </form>
+    </div>
+    <div id="preview">
+      <h2>Preview</h2>
+    </div>
+
+    <!--Footer-->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="row">
+          <div class="footer-logo">
+            <img src="../Images/logo.png" alt="Website logo" class="logo" />
+            <p class="logo-title">Beneath The Waves</p>
+          </div>
+          <div class="footer-links">
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="profile.html">Register</a></li>
+              <li><a href="home.html#articles-heading"> Articles </a></li>
+              <li><a href="feedback.html">Feedback</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="team.html">Team</a></li>
+            </ul>
+          </div>
+          <div id="horizontal-line"></div>
+          <div id="vertical-line"></div>
+          <div class="team-info">
+            <p>Our Team</p>
+            <div class="students">
+              <div class="std-info">
+                <a href="PageEditorStudent1.html"
+                  ><img src="../Images/team/std1.jpg" alt="Student 1" />
+                  <p>Ransika Ranaweera</p></a
+                >
+              </div>
+              <div class="std-info">
+                <a href="PageEditorStudent2.html"
+                  ><img src="../Images/team/std2.jpg" alt="Student 2" />
+                  <p>Chamath Matharage</p></a
+                >
+              </div>
+              <div class="std-info">
+                <a href="PageEditorStudent3.html"
+                  ><img src="../Images/team/std3.jpg" alt="Student 3" />
+                  <p>Sukhitha Saparamadu</p></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="page-end">
+        <p>© All Rights Reserved - Beneath The Waves | Sri Lanka</p>
+      </div>
+    </footer>
+
+    <script src="../JS/main.js"></script>
+    <script src="../JS/feedback.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
